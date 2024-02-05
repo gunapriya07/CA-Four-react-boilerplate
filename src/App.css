@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding: 0;
+}
+/* background image */
+body{
+    background:url("./assect/Background.webp");  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* logo and logo name */
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+.logo-name{
+    margin-left: 150px;
+    color: #8686F3;
+    position: relative;
+    bottom: 40px;
+}
+/* main container which contain the questions and options */
+.main{
+     background-color: white;
+     height: 65vh;
+     width: 80vw;
+     border-left: 5px solid #8686F3;
+     padding: 20px;
+     position: relative;
+     left:100px;
+     bottom: 20px;
+   }  
+.Question,.para1,.no{
+    color: black;
+}
+ /* four options */
+.options{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.options>button{
+    border: 1px ;
+    border-radius: 30px;
+    width:400px;
+    height: 30px;
+    margin-top: 30px;
+    background-color:hsl(196, 96%, 49%);
+    color: white;
+    position:relative;
+    right: 30px ;
+    top:10px;
+    z-index: 1;
+}
+/* bottom buttons */
+.footer{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 5px;
+}
+.footer>button{
+    border:1px;
+    border-radius: 30px;
+    width: 130px;
+    height: 40px;  
+    margin-top: 20px;
+}
+/* to change the question color */
+  .highlighted-text {
+    color: red; 
+  }
+  /* button for color changing */
+.remove-btn,.add-btn{
+    background-color:#8686F3; ;
+    color: white;
+    position: relative;
+    top: 50px;
+}
+/* .Question and .Question nos */
+.no {
+  font-size: 0.8em;
+  color: #555;
+  text-align: center;
+}
+
+.para1 {
+  font-size: 30px;
+  margin-top: 10px;
+  text-align: center;
+
+}
+  .app {
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .app.dark-mode {
+    background-color: #1e1e1e; /* Dark mode background color */
+    color: black; /* Dark mode text color */
+  }
+
+  .score-h1 {
+    color: black; /* Light mode text color for score */
+  }
+  
+  .app.dark-mode .score-h1 {
+    color: black /* Dark mode text color for score */
+  }
+  /* dark mode and light mode */
+  .toggle-btn{
+    position: relative;
+    left: 85%;
+    bottom: 62px;
+    width: 90px;
+    height: 30px;
+    background-color: #8686F3;
+    border: none;
+    color: #ffffff;
+    border-radius: 30px;
+  }
+  /* play again button  */
+  .again-btn {
+    /* text-align: center; */
+    background-color: #8686F3;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+    left: 480px;
+    top: 200px;
+  }
+  .again-btn:hover {
+    background-color: #ffffff;
+    color: #8686F3;
+  }
+  /* score button */
+  .score-h1{
+    position: relative;
+    top:90px;
+    text-align: center;
+    color:black;
+  }
+  .result-text{
+    text-align: center;
+    position: relative;
+    top:120px;
+  }
